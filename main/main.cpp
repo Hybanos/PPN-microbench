@@ -1,7 +1,4 @@
 #include <PPN-microbench/driver.hpp>
-#include <PPN-microbench/cpu_frequency.hpp>
-#include <PPN-microbench/memory.hpp>
-#include <PPN-microbench/ops.hpp>
 
 int main(int argc, char **argv) {
 
