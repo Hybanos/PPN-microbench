@@ -3,16 +3,18 @@
 #include <PPN-microbench/memory.hpp>
 #include <PPN-microbench/ops.hpp>
 
-int main() {
+int main(int argc, char **argv) {
 
-    Driver driver;
+    Driver driver(argc, argv);
 
-    driver.addBench(new CPUFrequency(10))
-        .addBench(new Ops(10))
-        .addBench(new Memory())
-        .setOutputFile("../report/out.json")
-        .run()
-        .save();
+    // Driver driver;
+
+    // driver.addBench(new CPUFrequency(10))
+    //     .addBench(new Ops(10))
+    //     .addBench(new Memory())
+    //     .setOutputFile("../report/out.json")
+    //     .run()
+    //     .save();
 
     return 0;
 }
