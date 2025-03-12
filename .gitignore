@@ -7,6 +7,7 @@ report/out.json
 
 # Python venv
 .venv
+venv
 
 # Prerequisites
 *.d
