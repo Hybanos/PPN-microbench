@@ -1,6 +1,6 @@
 add_library(PPN-microbench STATIC)
 
-target_sources(PPN-microbench PRIVATE microbench.cpp context.cpp driver.cpp ops.cpp cpu_frequency.cpp memory.cpp)
+target_sources(PPN-microbench PRIVATE microbench.cpp context.cpp driver.cpp ops.cpp cpu_frequency.cpp memory.cpp mem_bandwidth.cpp)
 
 target_sources(
     PPN-microbench
@@ -13,6 +13,7 @@ target_sources(
             ${PROJECT_SOURCE_DIR}/include/PPN-microbench/driver.hpp
             ${PROJECT_SOURCE_DIR}/include/PPN-microbench/ops.hpp
             ${PROJECT_SOURCE_DIR}/include/PPN-microbench/memory.hpp
+            ${PROJECT_SOURCE_DIR}/include/PPN-microbench/mem_bandwidth.hpp
             ${PROJECT_SOURCE_DIR}/include/PPN-microbench/asm_functions.hpp
 )
 
